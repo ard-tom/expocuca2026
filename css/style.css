@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*
+Paleta:
+0a1128
+001f54
+034078
+1282a2
+fefcfb
+*/
+
+/*É bom deixarmos essa linha para cada imagem, é para a borda dela:
+    border: 7px solid #034078;
+*/
+
+body {
+    background-color: #fefcfb;
+}
+
+#logoetec {
+    width: 149px;
+    float: left;
+}
+
+h2 {
+    font-size: 48px; 
+    color: #001f54; 
+    padding: 10px 0; /* Menos padding */
+    margin-left: 20px; /* Mais margem */ 
+    font-weight: 700; /* Define a espessura */
+    text-decoration: none;
+}
+
+#header {
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2); /* Sombra mais suave */ 
+    border-bottom: none;
+}
+
+#header h2 {
+    padding-top: 20px;
+    margin-left: 180px;
+}
+
+#index {
+    text-decoration: none;
+}
+
+
+#nav-list {
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 0;
+    margin-top: 0px;
+    display: flex;
+    width: 100%;
+    font-size: 20px;
+}
+
+#nav-list li {
+    flex: 1;
+}
+
+#nav-list li a {
+    color: #034078; /* O azul médio para os links */ 
+    border: none; /* Remova todas as bordas */ 
+    border-bottom: 3px solid transparent; /* Adicione uma borda invisível */ 
+    font-weight: 500; 
+    height: auto; 
+    padding: 20px 15px; /* Mais altura */
+    text-decoration: none;
+}
+
+#nav-list li a:hover {
+    background-color: transparent; 
+    color: #001f54; 
+    border-bottom: 3px solid #1282a2; /* Usa o azul claro da paleta */
+}
+
+main { 
+    max-width: 1000px; /* Largura ideal para leitura */
+    margin: 30px auto; /* Centraliza o conteúdo e dá margem acima */ 
+    padding: 0 20px; /* Padding nas laterais para telas pequenas */ 
+    font-size: 25px;
+}
+
+.dev_sistema {
+    font-size: 120%;
+    color: #001f54;
+}
+
+p {
+    color: #0a1128; /* Cor quase preta da sua paleta */ 
+    line-height: 1.65; /* Essencial! Deixa o texto respirar */ 
+    margin-bottom: 20px; /* Espaçamento entre parágrafos */ 
+}
+
+h3 {
+    text-indent: 60px;
+    font-size: 35px;
+    color: #001f54;
+}
+
+.textos {
+    text-indent: 60px;
+    text-align: justify;
+}
+
+.vouchorar {
+    height: auto;
+    background-color: #001f54;
+    color: white;
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.vouchorar ul {
+    margin-top: 4%;
+}
+
+#vouchorar,
+.vouchorar footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 5%;
+}
+
+.contatos,
+.creditos {
+    margin-left: 0;
+    list-style: none;
+}
+
+.contatos li,
+.creditos li {
+    list-style: none;
+}

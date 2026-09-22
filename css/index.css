@@ -1,0 +1,36 @@
+#escola {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 38%;
+    border: 7px solid #034078;
+    }
+
+#fotoescola {
+    background-color: #001f54;
+    padding: 15px;
+}
+
+figcaption {
+    padding-top: 8px;
+    color: white;
+    text-align: center;
+}
+
+.intro {
+    text-align: center;
+    color: #001f54;
+}
+
+#localescola {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 38%;
+    border: 7px solid #034078;
+    }
+
+#local {
+    background-color: #001f54;
+    padding: 15px;
+}
