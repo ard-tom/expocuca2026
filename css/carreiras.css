@@ -1,7 +1,7 @@
 .wef {
     display: block;
-    width: 830px;
-    height: 1010px;
+    max-width: 100%;
+    height: auto;
     margin: auto;
     border: 3px solid #034078;
 }

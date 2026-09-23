@@ -26,7 +26,7 @@ body {
 }
 
 h2 {
-    font-size: 48px; 
+    font-size: clamp(24px, 6vw, 48px); 
     color: #001f54; 
     padding: 10px 0; /* Menos padding */
     margin-left: 20px; /* Mais margem */ 
@@ -77,6 +77,16 @@ h2 {
     color: #001f54; 
     border-bottom: 3px solid #1282a2; /* Usa o azul claro da paleta */
 }
+
+@media (max-width: 768px) {
+    #nav-list {
+        flex-wrap: wrap;   /* deixa os itens quebrarem linha */
+    }
+    #nav-list li a {
+        margin-left: 0 !important; /* anula os inline styles do HTML */
+    }
+}
+
 
 main { 
     max-width: 1000px; /* Largura ideal para leitura */
