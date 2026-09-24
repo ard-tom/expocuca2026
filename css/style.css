@@ -26,12 +26,12 @@ body {
 }
 
 h2 {
-    font-size: clamp(24px, 6vw, 48px); 
     color: #001f54; 
     padding: 10px 0; /* Menos padding */
     margin-left: 20px; /* Mais margem */ 
     font-weight: 700; /* Define a espessura */
     text-decoration: none;
+    font-size: clamp(24px, 6vw, 48px); 
 }
 
 #header {
@@ -47,7 +47,6 @@ h2 {
 #index {
     text-decoration: none;
 }
-
 
 #nav-list {
     list-style: none; /* Remove os marcadores de lista */
@@ -78,15 +77,6 @@ h2 {
     border-bottom: 3px solid #1282a2; /* Usa o azul claro da paleta */
 }
 
-@media (max-width: 768px) {
-    #nav-list {
-        flex-wrap: wrap;   /* deixa os itens quebrarem linha */
-    }
-    #nav-list li a {
-        margin-left: 0 !important; /* anula os inline styles do HTML */
-    }
-}
-
 
 main { 
     max-width: 1000px; /* Largura ideal para leitura */
@@ -102,12 +92,12 @@ main {
 
 p {
     color: #0a1128; /* Cor quase preta da sua paleta */ 
-    line-height: 1.65; /* Essencial! Deixa o texto respirar */ 
+    line-height: 1.35; /* Essencial! Deixa o texto respirar */ 
     margin-bottom: 20px; /* Espaçamento entre parágrafos */ 
+    font-size: clamp(12px, 6vw, 24px);
 }
 
 h3 {
-    text-indent: 60px;
     font-size: 35px;
     color: #001f54;
 }
@@ -147,4 +137,40 @@ h3 {
 .contatos li,
 .creditos li {
     list-style: none;
+}
+
+a {
+    color: #fefcfb;
+}
+
+@media (max-width: 800px) {
+    p {
+        font-size: clamp(1rem, 5vw, 8px);
+        line-height: 1.45;
+    }
+
+    h3, .intro {
+        text-align: center;
+        font-size: 5vw;
+    }
+    
+    .creditos {
+        font-size: 6vw;
+        padding-left: 0px;
+        margin-left: 0;
+    }
+
+    .contatos {
+        font-size: 5vw;
+        padding-left: 0px;
+        margin-left: 0;
+    }
+
+    #nav-list {
+        flex-wrap: wrap;   /* deixa os itens quebrarem linha */
+    }
+    #nav-list li a {
+        margin-left: 4% !important; /* anula os inline styles do HTML */   
+        font-size: 70%;
+    }
 }
