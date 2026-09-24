@@ -51,24 +51,20 @@ h2 {
 
 #nav-list {
     list-style: none; /* Remove os marcadores de lista */
-    padding: 0;
     margin-top: 0px;
     display: flex;
-    width: 100%;
+    justify-content: space-evenly;
     font-size: 20px;
-}
-
-#nav-list li {
-    flex: 1;
+    gap: 10%;
+    margin-right: 3%;
 }
 
 #nav-list li a {
     color: #034078; /* O azul médio para os links */ 
     border: none; /* Remova todas as bordas */ 
     border-bottom: 3px solid transparent; /* Adicione uma borda invisível */ 
-    font-weight: 500; 
-    height: auto; 
-    padding: 20px 15px; /* Mais altura */
+    font-weight: 500;
+    padding: 20px 15px;
     text-decoration: none;
 }
 

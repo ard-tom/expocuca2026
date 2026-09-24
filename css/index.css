@@ -4,6 +4,7 @@
     margin-right: auto;
     width: 38%;
     border: 7px solid #034078;
+    border-radius: 2%;
     }
 
 #fotoescola {
@@ -23,10 +24,11 @@ figcaption {
 }
 
 #localescola {
-    display: block;
     margin-left: auto;
     margin-right: auto;
     width: 38%;
+    display: flex;
+    justify-content: center;
     border: 7px solid #034078;
     }
 

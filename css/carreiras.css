@@ -4,9 +4,11 @@
     height: 1010px;
     margin: auto;
     border: 3px solid #034078;
+    border-radius: 2%;
 }
 
 .grafico{
     background-color: #001f54;
     padding: 10px;
+    border-radius: 2%;
 }
