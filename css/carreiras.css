@@ -10,3 +10,18 @@
     background-color: #001f54;
     padding: 10px;
 }
+
+.lista-carreiras {
+    margin-bottom: 5%;
+}
+
+.lista-carreiras li{
+        margin-bottom: 1%;
+}    
+
+@media (max-width: 800px) {
+    .lista-carreiras li {
+        font-size: 4vw;
+    }
+
+}
