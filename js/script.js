@@ -35,4 +35,20 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    const alterarFundo = document.getElementById('alterarFundo');
+
+    if (alterarFundo) {
+        if (localStorage.getItem('modoMatrix') === 'ativo') {
+            document.body.classList.add('modo-matrix');
+            alterarFundo.checked = true;
+        }
+
+        alterarFundo.addEventListener('change', function () {
+            document.body.classList.toggle('modo-matrix', alterarFundo.checked);
+            localStorage.setItem('modoMatrix', alterarFundo.checked ? 'ativo' : 'inativo');
+        });
+    }
+
+
+
 });
