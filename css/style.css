@@ -68,7 +68,8 @@ h2 {
     font-weight: 500; 
     height: auto; 
     padding: 20px 15px; /* Mais altura */
-    text-decoration: none;
+    
+    text-align: center;
 }
 
 #nav-list li a:hover {
@@ -170,7 +171,7 @@ a {
         flex-wrap: wrap;   /* deixa os itens quebrarem linha */
     }
     #nav-list li a {
-        margin-left: 4% !important; /* anula os inline styles do HTML */   
         font-size: 70%;
+        margin-left: 4% !important; /* anula os inline styles do HTML */
     }
 }
