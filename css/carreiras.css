@@ -4,11 +4,13 @@
     height: auto;
     margin: auto;
     border: 3px solid #034078;
+    border-radius: 2%;
 }
 
 .grafico{
     background-color: #001f54;
     padding: 10px;
+<<<<<<< HEAD
 }
 
 .lista-carreiras {
@@ -25,4 +27,7 @@
         margin: 2vw;
     }
 
+=======
+    border-radius: 2%;
+>>>>>>> origin/Mudanças-Antonio
 }

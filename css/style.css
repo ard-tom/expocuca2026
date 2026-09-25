@@ -40,8 +40,7 @@ h2 {
 }
 
 #header h2 {
-    padding-top: 20px;
-    margin-left: 180px;
+    margin-right: 35%;
 }
 
 #index {
@@ -134,6 +133,7 @@ h3 {
     list-style: none;
 }
 
+<<<<<<< HEAD
 a {
     color: #fefcfb;
 }
@@ -177,3 +177,110 @@ a {
         margin-bottom: 20px;
     }
 }
+=======
+.slider-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+}
+
+.slider-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider-track {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 26px;
+    transition: background-color 0.3s ease;
+}
+
+.slider-track::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.slider-switch input:checked + .slider-track {
+    background-color: #0d790a;
+}
+
+.slider-switch input:checked + .slider-track::before {
+    transform: translateX(24px);
+}
+
+.legenda-botao {
+    color: #001f54;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+    border-bottom: none;
+    padding: 10px 30px;
+}
+
+#logoetec {
+    width: 149px;
+    float: none; /* remove o float antigo */
+}
+
+#header h2 {
+    padding-top: 0;
+    margin-left: 0; /* não precisa mais do valor fixo */
+}
+
+body.modo-matrix {
+    background-image: 
+        linear-gradient(rgba(10, 17, 40, 0.75), rgba(10, 17, 40, 0.75)),
+        url("../images/cmatrix.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+body.modo-matrix h2,
+body.modo-matrix h3,
+body.modo-matrix .dev_sistema {
+    color: #39ff14; /* verde matrix */
+}
+
+body.modo-matrix #nav-list li a {
+    color: #33cc33;
+}
+
+body.modo-matrix #nav-list li a:hover {
+    color: #39ff14;
+    border-bottom: 3px solid #39ff14;
+}
+
+body.modo-matrix .textos{
+    color: white;
+}
+
+body.modo-matrix .vouchorar {
+    background-color: transparent;
+}
+
+body.modo-matrix .legenda-botao {
+    color: white;
+}
+>>>>>>> origin/Mudanças-Antonio
