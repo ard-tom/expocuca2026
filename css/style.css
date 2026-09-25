@@ -164,13 +164,16 @@ a {
     #nav-list {
         flex-wrap: wrap;   /* deixa os itens quebrarem linha */
     }
+    
     #nav-list li a {
-        font-size: 75%;
+        font-size: 84%;
         padding: 0;
+        text-decoration: underline;
     }
 
     #nav-list li {
         padding: 0;
         width: 40%;
+        margin-bottom: 20px;
     }
 }

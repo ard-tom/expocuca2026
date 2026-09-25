@@ -34,3 +34,9 @@ figcaption {
     background-color: #001f54;
     padding: 15px;
 }
+
+@media (max-width: 800px) {
+    #local {
+        display: none;
+    }
+}

@@ -22,6 +22,7 @@
 @media (max-width: 800px) {
     .lista-carreiras li {
         font-size: 4vw;
+        margin: 2vw;
     }
 
 }
