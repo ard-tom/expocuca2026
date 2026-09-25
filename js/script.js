@@ -60,3 +60,72 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    // Anima os elementos com a classe "fade-in-scroll" quando eles entram na tela
+    const elementosAnimados = document.querySelectorAll('.fade-in-scroll');
+
+    const observer = new IntersectionObserver(function (entradas) {
+        entradas.forEach(function (entrada) {
+            if (entrada.isIntersecting) {
+                entrada.target.classList.add('is-visible');
+                observer.unobserve(entrada.target); // anima só uma vez
+            }
+        });
+    }, {
+        threshold: 0.15
+    });
+
+    elementosAnimados.forEach(function (elemento) {
+        observer.observe(elemento);
+    });
+
+    // Botão de voltar ao topo
+    const botaoTopo = document.getElementById('voltar-topo');
+
+    if (botaoTopo) {
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 300) {
+                botaoTopo.classList.add('mostrar');
+            } else {
+                botaoTopo.classList.remove('mostrar');
+            }
+        });
+
+        botaoTopo.addEventListener('click', function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+
+    const alterarFundo = document.getElementById('alterarFundo');
+    const logo = document.getElementById('logoetec');
+
+    // Caminhos das duas versões da logo (troque pelo nome real do seu segundo arquivo)
+    const logoNormal = 'images/LogoCA.png';
+    const logoAlternativa = 'images/Resenha.png';
+
+    if (alterarFundo) {
+        if (localStorage.getItem('modoMatrix') === 'ativo') {
+            document.body.classList.add('modo-matrix');
+            alterarFundo.checked = true;
+            if (logo) {
+                logo.src = logoAlternativa;
+            }
+        }
+
+        alterarFundo.addEventListener('change', function () {
+            document.body.classList.toggle('modo-matrix', alterarFundo.checked);
+            localStorage.setItem('modoMatrix', alterarFundo.checked ? 'ativo' : 'inativo');
+
+            if (logo) {
+                logo.src = alterarFundo.checked ? logoAlternativa : logoNormal;
+            }
+        });
+    }
+    /*
+    resenha maluca 
+    */
+
+
+});
