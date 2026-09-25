@@ -40,7 +40,7 @@ h2 {
 }
 
 #header h2 {
-    margin-right: 55%;
+    margin-right: 35%;
 }
 
 #index {
@@ -178,6 +178,10 @@ h3 {
     transform: translateX(24px);
 }
 
+.legenda-botao {
+    color: #001f54;
+}
+
 #header {
     display: flex;
     align-items: center;
@@ -223,6 +227,14 @@ body.modo-matrix #nav-list li a:hover {
     border-bottom: 3px solid #39ff14;
 }
 
-body.modo-matrix .textos {
+body.modo-matrix .textos{
+    color: white;
+}
+
+body.modo-matrix .vouchorar {
+    background-color: transparent;
+}
+
+body.modo-matrix .legenda-botao {
     color: white;
 }

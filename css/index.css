@@ -36,3 +36,7 @@ figcaption {
     background-color: #001f54;
     padding: 15px;
 }
+
+body.modo-matrix #fotoescola, #local {
+    background-color: transparent;
+}
