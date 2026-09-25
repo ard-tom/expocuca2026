@@ -162,6 +162,7 @@ a {
 
     #nav-list {
         flex-wrap: wrap;   /* deixa os itens quebrarem linha */
+        border-bottom: 2px solid black;
     }
     
     #nav-list li a {
