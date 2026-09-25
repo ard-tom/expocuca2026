@@ -10,7 +10,7 @@
 .grafico{
     background-color: #001f54;
     padding: 10px;
-<<<<<<< HEAD
+    border-radius: 2%;
 }
 
 .lista-carreiras {
@@ -26,8 +26,4 @@
         font-size: 4vw;
         margin: 2vw;
     }
-
-=======
-    border-radius: 2%;
->>>>>>> origin/Mudanças-Antonio
 }

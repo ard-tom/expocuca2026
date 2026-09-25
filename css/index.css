@@ -37,14 +37,14 @@ figcaption {
     padding: 15px;
 }
 
-<<<<<<< HEAD
+
 @media (max-width: 800px) {
     #local {
         display: none;
     }
 }
-=======
+
 body.modo-matrix #fotoescola, #local {
     background-color: transparent;
 }
->>>>>>> origin/Mudanças-Antonio
+
